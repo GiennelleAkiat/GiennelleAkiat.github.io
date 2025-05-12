@@ -1,0 +1,226 @@
+* {
+    color: white;  
+    text-align: center;
+}
+
+body {
+    /* position: relative; */
+    background-image: linear-gradient(#000000, #AA00F9);
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    font-size: 25px;
+}
+
+#pfp {
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+li {
+    text-align: left;
+}
+
+.container a {
+    background-color: #2d2842;
+    padding: 10px 50px 10px 50px; 
+    text-decoration: none;
+}
+  
+a:visited {
+    color: white;
+}
+  
+a:hover {
+    color: #ffffff;
+    background-color: #AA00F9;
+}
+
+/* =========================================== DIV */
+
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
+div {
+    opacity: 0;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: forwards;
+    background-color: black;
+}
+
+.container {
+    border: 5px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px 50px 50px 50px;
+    /* padding t, r, b, l */
+    z-index: 1;
+}
+
+.container h3 {
+    font-size: 30px;
+}
+
+/* ================================== About Box */
+
+.about {
+    border: 5px solid #ffffff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    width: 50%;
+    padding: 60px 20px 50px 20px;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================================== Illustration Slideshow */
+
+.slides {
+    display:grid;
+    gap: 20rem;
+    grid-auto-flow: column;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+/* =============================== Illustration */
+.illust {
+    border: 5px solid #ffffff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    width: 70%;
+    padding: 40px;
+}
+
+.illust h1 {
+    margin-top: -20px;
+}
+
+.illust img {
+    display: block;
+    max-width:1250px;
+    max-height:700px;
+    width: auto;
+    height: auto;
+}
+
+/* ============================== Comic */
+.comic {
+    border: 5px solid #ffffff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    width: 70%;
+    /* height: 500px; */
+    padding: 40px;
+}
+
+.comic h1 {
+    margin-top: -20px;
+}
+
+.comic img {
+    display: block;
+    max-width:1250px;
+    max-height:900px;
+    width: auto;
+    height: auto;
+}
+
+/* ================================== Top Navigation Bar */
+ul.topnav {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+ul.topnav li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border-top: 2px solid #AA00F9;
+    border-bottom: 2px solid #AA00F9;
+    transform: scaleY(2);
+    opacity: 0; transition: 0.3s;
+}
+
+ul li a:after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: #AA00F9;
+    transform: scale(0);
+    opacity: 0; transition: 0.3s;
+    z-index: -1;
+}
+
+ul li a:hover {
+    color: #000000;
+}
+
+ul li a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+ul li a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+
+/* .topnav > a {
+    background-color: #2d2842;
+    padding: 10px 50px 10px 50px; 
+    text-decoration: none;
+}
+  
+.topnav > a:visited {
+    color: white;
+}
+  
+.topnav > a:hover {
+    color: #000000;
+    background-color: #AA00F9;
+} */
