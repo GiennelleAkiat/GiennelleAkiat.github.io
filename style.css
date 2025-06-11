@@ -11,6 +11,8 @@ body {
     background-color: black;
     font-size: 25px;
     overflow-y: auto;
+    orphans: 4;
+    
 }
 
 #pfp {
@@ -59,10 +61,12 @@ div {
 
 .container {
     border: 5px solid #ffffff;
-    position: absolute;
+    position: relative;
+    margin-top: 40px;
     top: 20%;
     left: 50%;
-    transform: translate(-50%, -5%);
+    width: fit-content;
+    transform: translate(-50%, 20%);
     padding: 60px 50px 50px 50px;
     /* padding t, r, b, l */
     z-index: -4;
