@@ -10,6 +10,9 @@ body {
     background-size: cover;
     background-color: black;
     font-size: 25px;
+    overflow-y: auto;
+    
+    
 }
 
 #pfp {
@@ -25,8 +28,10 @@ li {
 }
 
 .container a {
+    display: inline-block;
     background-color: #2d2842;
-    padding: 10px 50px 10px 50px; 
+    padding: 10px 50px 10px 50px;
+    margin-top: 10px;
     text-decoration: none;
 }
   
@@ -57,12 +62,13 @@ div {
 .container {
     border: 5px solid #ffffff;
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -5%);
     padding: 60px 50px 50px 50px;
     /* padding t, r, b, l */
-    z-index: 1;
+    z-index: -4;
+   
 }
 
 .container h3 {
@@ -152,6 +158,7 @@ ul.topnav {
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
+    margin-bottom: 20px;
 }
 
 ul.topnav li {
